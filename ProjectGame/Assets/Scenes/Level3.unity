@@ -5534,6 +5534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy2
       objectReference: {fileID: 0}
+    - target: {fileID: 7886968009323600225, guid: e0e7dcfa4f8bf66428977a4875c62bf1, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8501292679550761651, guid: e0e7dcfa4f8bf66428977a4875c62bf1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.33
@@ -6258,7 +6262,7 @@ Transform:
   m_GameObject: {fileID: 1926266114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9, y: -3.21, z: 0}
+  m_LocalPosition: {x: 9.02, y: -3.67, z: 0}
   m_LocalScale: {x: 0.34593, y: 0.34593, z: 0.34593}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7453,6 +7457,10 @@ PrefabInstance:
     - target: {fileID: 861198309160652002, guid: e0e7dcfa4f8bf66428977a4875c62bf1, type: 3}
       propertyPath: m_Name
       value: enemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886968009323600225, guid: e0e7dcfa4f8bf66428977a4875c62bf1, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8501292679550761651, guid: e0e7dcfa4f8bf66428977a4875c62bf1, type: 3}
       propertyPath: m_LocalPosition.x
