@@ -50,6 +50,9 @@ public class Player : MonoBehaviour
         {
             switch (SceneManager.GetActiveScene().name)
             {
+                case "Menu":
+                    SceneManager.LoadScene("Level1");
+                    break;
                 case "Level1":
                     SceneManager.LoadScene("Level2");
                     break;
