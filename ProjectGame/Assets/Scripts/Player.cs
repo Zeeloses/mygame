@@ -8,13 +8,12 @@ public class Player : MonoBehaviour
 {
     public float speed = 5.0f;
     public int keys = 0;
-    public int lives = 3;
+    public TMPro.TextMeshProUGUI livesText;
     // Start is called before the first frame update
     void Start()
     {
-        
+        livesText.text = "Revives: " + Lives.totalLives;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -26,7 +25,7 @@ public class Player : MonoBehaviour
         {
             transform.Translate(speed * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKey(KeyCode.UpArrow) | Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.UpArrow) | Input.GetKey(KeyCode.W))
         {
             transform.Translate(0, speed * Time.deltaTime, 0);
         }
@@ -40,11 +39,22 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            if (lives > 0)
+           if (Lives.totalLives > 0)
             {
+                Lives.totalLives--;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                lives--;
             }
+            else
+            {
+                SceneManager.LoadScene("Menu");
+                Lives.totalLives = 3;
+            }
+        }
+        if (collision.gameObject.tag == "Lives")
+        {
+            Lives.totalLives++;
+            livesText.text = "Revives: " + Lives.totalLives;
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Door")
         {
