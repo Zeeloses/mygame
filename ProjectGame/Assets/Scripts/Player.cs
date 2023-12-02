@@ -50,26 +50,26 @@ public class Player : MonoBehaviour
                 Lives.totalLives = 3;
             }
         }
-        if (collision.gameObject.tag == "Lives")
+       /* if (collision.gameObject.tag == "Lives")
         {
             Lives.totalLives++;
             livesText.text = "Revives: " + Lives.totalLives;
             Destroy(collision.gameObject);
-        }
+        }*/
         if (collision.gameObject.tag == "Door")
         {
             switch (SceneManager.GetActiveScene().name)
             {
                 case "Menu":
-                    SceneManager.LoadScene("Level1");
+                    SceneManager.LoadScene("LevelSelect");
                     break;
                 case "Level1":
-                    SceneManager.LoadScene("Level2");
+                    SceneManager.LoadScene("LevelSelect");
                     break;
                 case "Level2":
                     if (keys == 2)
                     {
-                        SceneManager.LoadScene("Level3");
+                        SceneManager.LoadScene("LevelSelect");
                     }
                     break;
                 case "Level3":

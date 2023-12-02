@@ -9,6 +9,6 @@ public class UIButtonScript : MonoBehaviour,IPointerDownHandler
 {
     public void OnPointerDown(PointerEventData eventData)
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("LevelSelect");
     }
 }
