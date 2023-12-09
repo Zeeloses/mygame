@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
             else
             {
                 SceneManager.LoadScene("Menu");
-                Lives.totalLives = 3;
+                Lives.totalLives = 5;
             }
         }
        /* if (collision.gameObject.tag == "Lives")
@@ -73,16 +73,16 @@ public class Player : MonoBehaviour
                     }
                     break;
                 case "Level3":
-                    SceneManager.LoadScene("Level4");
+                    SceneManager.LoadScene("LevelSelect");
                     break;
                 case "Level4":
-                    SceneManager.LoadScene("Level5");
+                    SceneManager.LoadScene("LevelSelect");
                     break;
                 case "Level5":
-                    SceneManager.LoadScene("Level6");
+                    SceneManager.LoadScene("LevelSelect");
                     break;
                 case "Level6":
-                    SceneManager.LoadScene("Level7");
+                    SceneManager.LoadScene("LevelSelect");
                     break;
                 case "Level7":
                     SceneManager.LoadScene("Level8");

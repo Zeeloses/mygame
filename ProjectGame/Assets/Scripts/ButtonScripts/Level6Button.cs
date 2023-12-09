@@ -5,11 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Level2Button : MonoBehaviour,IPointerDownHandler
+public class Level6Button : MonoBehaviour,IPointerDownHandler
 {
     public void OnPointerDown(PointerEventData eventData)
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level6");
     }
 
     // Start is called before the first frame update
