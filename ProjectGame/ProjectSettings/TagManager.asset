@@ -8,11 +8,12 @@ TagManager:
   - Door
   - Key
   - Lives
+  - Bomb
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Box
   - Water
   - UI
   - 
